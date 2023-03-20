@@ -4,6 +4,8 @@
  */
 package Janelas;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author adR
@@ -13,8 +15,13 @@ public class JFRPrincipal extends javax.swing.JFrame {
     /**
      * Creates new form JFRPrincipal
      */
-    double n1,n2;
+    double n1, n2;
     String op;
+    boolean naopaga = false;
+    boolean restart = false;
+            int igual2x = 0;
+
+
     public JFRPrincipal() {
         initComponents();
     }
@@ -246,6 +253,7 @@ public class JFRPrincipal extends javax.swing.JFrame {
             }
         });
 
+        JTFresultado.setEditable(false);
         JTFresultado.setFont(new java.awt.Font("Yu Gothic", 1, 14)); // NOI18N
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -366,52 +374,106 @@ public class JFRPrincipal extends javax.swing.JFrame {
 
     private void jButton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton30ActionPerformed
         // TODO add your handling code here:
-        JTFresultado.setText(JTFresultado.getText() +"1");
+
+        if (restart == true) {
+            JTFresultado.setText(null);
+            restart = false;
+        }
+        JTFresultado.setText(JTFresultado.getText() + "1");
+          naopaga = false;
+        
     }//GEN-LAST:event_jButton30ActionPerformed
 
     private void jButton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton29ActionPerformed
         // TODO add your handling code here:
-         JTFresultado.setText(JTFresultado.getText() +"2");
+        if (restart == true) {
+            JTFresultado.setText(null);
+            restart = false;
+        }
+
+        JTFresultado.setText(JTFresultado.getText() + "2");
     }//GEN-LAST:event_jButton29ActionPerformed
 
     private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton31ActionPerformed
         // TODO add your handling code here:
-         JTFresultado.setText(JTFresultado.getText() +"3");
+        if (restart == true) {
+            JTFresultado.setText(null);
+            restart = false;
+        }
+        JTFresultado.setText(JTFresultado.getText() + "3");
+          naopaga = false;
     }//GEN-LAST:event_jButton31ActionPerformed
 
     private void jButton32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton32ActionPerformed
         // TODO add your handling code here:
-         JTFresultado.setText(JTFresultado.getText() +"4");
+        if (restart == true) {
+            JTFresultado.setText(null);
+            restart = false;
+        }
+        JTFresultado.setText(JTFresultado.getText() + "4");
+          naopaga = false;
     }//GEN-LAST:event_jButton32ActionPerformed
 
     private void jButton33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton33ActionPerformed
         // TODO add your handling code here:
-         JTFresultado.setText(JTFresultado.getText() +"5");
+        if (restart == true) {
+            JTFresultado.setText(null);
+            restart = false;
+        }
+
+        JTFresultado.setText(JTFresultado.getText() + "5");
+
+  naopaga = false;
     }//GEN-LAST:event_jButton33ActionPerformed
 
     private void jButton34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton34ActionPerformed
         // TODO add your handling code here:
-         JTFresultado.setText(JTFresultado.getText() +"6");
+        if (restart == true) {
+            JTFresultado.setText(null);
+            restart = false;
+        }
+        JTFresultado.setText(JTFresultado.getText() + "6");
+         naopaga = false;
     }//GEN-LAST:event_jButton34ActionPerformed
 
     private void jButton35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton35ActionPerformed
         // TODO add your handling code here:
-         JTFresultado.setText(JTFresultado.getText() +"7");
+        if (restart == true) {
+            JTFresultado.setText(null);
+            restart = false;
+        }
+        JTFresultado.setText(JTFresultado.getText() + "7");
+          naopaga = false;
     }//GEN-LAST:event_jButton35ActionPerformed
 
     private void jButton36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton36ActionPerformed
         // TODO add your handling code here:
-         JTFresultado.setText(JTFresultado.getText() +"8");
+        if (restart == true) {
+            JTFresultado.setText(null);
+            restart = false;
+        }
+        JTFresultado.setText(JTFresultado.getText() + "8");
+          naopaga = false;
     }//GEN-LAST:event_jButton36ActionPerformed
 
     private void jButton37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton37ActionPerformed
         // TODO add your handling code here:
-         JTFresultado.setText(JTFresultado.getText() +"9");
+        if (restart == true) {
+            JTFresultado.setText(null);
+            restart = false;
+        }
+        JTFresultado.setText(JTFresultado.getText() + "9");
+          naopaga = false;
     }//GEN-LAST:event_jButton37ActionPerformed
 
     private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
         // TODO add your handling code here:
-         JTFresultado.setText(JTFresultado.getText() +"0");
+        if (restart == true) {
+            JTFresultado.setText(null);
+            restart = false;
+        }
+        JTFresultado.setText(JTFresultado.getText() + "0");
+          naopaga = false;
     }//GEN-LAST:event_jButton27ActionPerformed
 
     private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
@@ -423,80 +485,107 @@ public class JFRPrincipal extends javax.swing.JFrame {
         // TODO add your handling code here:
         n1 = Double.parseDouble(JTFresultado.getText());
         op = "soma";
-      JTFresultado.setText(null);
+        JTFresultado.setText(null);
+        igual2x = 0;
     }//GEN-LAST:event_jButton18ActionPerformed
 
     private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
         // TODO add your handling code here:
-        n2 = Double.parseDouble(JTFresultado.getText());
+        igual2x++;
         
-        if("soma".equals(op)){
-            JTFresultado.setText(n1 + " + " +n2+ " = " + (n1+n2));
+        if (JTFresultado.getText().isEmpty()) {
+    JOptionPane.showMessageDialog(null,"O campo está vazio");
+    JTFresultado.setText(null);
+}
+        
+        
+        if (igual2x > 1) {
+             igual2x = 0;
+            JOptionPane.showMessageDialog(null, "Escolha os numeros","Atencao",JOptionPane.ERROR_MESSAGE);
+            JTFresultado.setText(null);
+
+        } else {
+            n2 = Double.parseDouble(JTFresultado.getText());
+            if ("soma".equals(op)) {
+                JTFresultado.setText(n1 + " + " + n2 + " = " + (n1 + n2));
+
+            }
+
+            if ("sub".equals(op)) {
+                JTFresultado.setText(n1 + " - " + n2 + " = " + (n1 - n2));
+            }
+
+            if ("x".equals(op)) {
+                JTFresultado.setText(n1 + " * " + n2 + " = " + (n1 * n2));
+            }
+
+            if ("/".equals(op)) {
+                JTFresultado.setText(n1 + " / " + n2 + " = " + (n1 / n2));
+            }
+       naopaga = true;
+        restart = true;
+        }
+       
       
-        }
-        
-        if("sub".equals(op)){
-          JTFresultado.setText(n1 + " - " +n2+ " = " + (n1-n2));
-        }
-        
-        if("x".equals(op)){
-          JTFresultado.setText(n1 + " * " +n2+ " = " + (n1*n2));
-        }
-        
-        if("/".equals(op)){
-          JTFresultado.setText(n1 + " / " +n2+ " = " + (n1/n2));
-        }
+            
+
     }//GEN-LAST:event_jButton25ActionPerformed
 
-    public static boolean existePonto(String txt){
-    boolean rst;
-    rst = false;
-    
-            for (int i = 0; i < txt.length(); i++) {
-            if(txt.substring(i , i+1).equals(".") ){
-            rst = true;
-            break;
+    public static boolean existePonto(String txt) {
+        boolean rst;
+        rst = false;
+
+        for (int i = 0; i < txt.length(); i++) {
+            if (txt.substring(i, i + 1).equals(".")) {
+                rst = true;
+                break;
             }
         }
-    return rst;
-    
+        return rst;
+
     }
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
         // TODO add your handling code here:
-         n1 = Double.parseDouble(JTFresultado.getText());
+        n1 = Double.parseDouble(JTFresultado.getText());
         op = "sub";
         JTFresultado.setText(null);
+        igual2x = 0;
     }//GEN-LAST:event_jButton19ActionPerformed
 
     private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
         // TODO add your handling code here:
-         n1 = Double.parseDouble(JTFresultado.getText());
+        n1 = Double.parseDouble(JTFresultado.getText());
         op = "x";
         JTFresultado.setText(null);
+        igual2x = 0;
     }//GEN-LAST:event_jButton22ActionPerformed
 
     private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
         // TODO add your handling code here:
-         n1 = Double.parseDouble(JTFresultado.getText());
+        n1 = Double.parseDouble(JTFresultado.getText());
         op = "/";
         JTFresultado.setText(null);
+        igual2x = 0;
     }//GEN-LAST:event_jButton23ActionPerformed
 
     private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
         // TODO add your handling code here:
-        if(!existePonto(JTFresultado.getText())){
-        JTFresultado.setText(JTFresultado.getText() +".");
+        if (!existePonto(JTFresultado.getText())) {
+            JTFresultado.setText(JTFresultado.getText() + ".");
         }
-                
+
     }//GEN-LAST:event_jButton28ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
-       String teste = JTFresultado.getText();
+        if (naopaga == false) {
+            String teste = JTFresultado.getText();
+            teste = teste.substring(0, teste.length() - 1);
+            JTFresultado.setText(teste);
 
-teste = teste.substring(0, teste.length() - 1);
+        }
 
-JTFresultado.setText(teste);
+
     }//GEN-LAST:event_jButton5ActionPerformed
 
     /**
